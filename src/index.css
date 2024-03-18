@@ -7,14 +7,12 @@ body{
   grid-auto-rows: minmax(50px auto) ;
   min-height: 100vh;
   gap:4px;
-  
 }
 .container header{
   background-color: rgb(110, 110, 240);
   grid-column: 1/-1;
   grid-row: 1;
   border-radius: 10px;
-
 }
 .container aside{
   background-color: rgb(91, 102, 99);
@@ -25,14 +23,28 @@ body{
   background-color: rgb(154, 180, 116);
   grid-column: span 2;
   grid-row: 2/4;
-  
 }
 .container footer{
   background-color: rgb(151, 114, 114);
   grid-column: 1/-1;
-
 }
-.button{
+.divheader{
   display: flex;
   justify-content: center;
+}
+.overHeader{
+  background-color: rgb(158, 232, 232);
+  display: grid;
+  grid-template-columns: 70% 25%;
+  grid-auto-rows: minmax(50px auto) ;
+  min-height: 80%;
+  gap:7px;
+}
+.im{
+background-color: blue;
+border-radius: 3px;
+}
+.mi{
+background-color: aquamarine;
+border-radius: 3px;
 }
