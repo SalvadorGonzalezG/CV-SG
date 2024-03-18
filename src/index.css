@@ -3,16 +3,17 @@ body{
 }
 .container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(50px auto) ;
   min-height: 100vh;
   gap:4px;
 }
 .container header{
-  background-color: rgb(110, 110, 240);
+  background-color: rgb(86, 126, 49);
   grid-column: 1/-1;
   grid-row: 1;
   border-radius: 10px;
+  height: auto;
 }
 .container aside{
   background-color: rgb(91, 102, 99);
@@ -31,20 +32,61 @@ body{
 .divheader{
   display: flex;
   justify-content: center;
+  gap: 2px;
+
+
 }
 .overHeader{
-  background-color: rgb(158, 232, 232);
+  background-color: rgb(99, 197, 197);
   display: grid;
-  grid-template-columns: 70% 25%;
+  grid-template-columns: 25% auto;
   grid-auto-rows: minmax(50px auto) ;
-  min-height: 80%;
-  gap:7px;
+  min-height: 71%;
+  gap:5px;
 }
 .im{
-background-color: blue;
-border-radius: 3px;
+background-color: rgb(155, 155, 241);
+border-radius: 5px;
+overflow: hidden;
 }
 .mi{
-background-color: aquamarine;
 border-radius: 3px;
+overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
+}
+.im img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20%;
+  margin-top: 5%;
+  opacity: 80%;
+}
+.btn{
+  border-radius: 5px;
+  color: blueviolet;
+  border: none;
+  margin-top: 2px;
+}
+.txt-ctr{
+  border-radius: 5px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: beige;
+  display: grid;
+  height: auto;
+  padding: 20px; /*Añade un espacio al rededor del h1,div, etc*/
+  
+}
+.txt-ctr h1{
+  margin: 0;
+  padding: 5px 30px;
+}
+.item{
+  height: 80px;
+  height: 80px;
+}
+.icons{
+  color: rgb(183, 42, 198);
 }
