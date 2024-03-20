@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import Aside from "./components/Aside"
+import Carrousel from "./components/Carrousel1"
 function App() {
 
   return (
@@ -9,7 +10,7 @@ function App() {
           <Header />
         </header>
         <aside>
-          <Aside />
+          <Carrousel />
         </aside>
         <main>Content</main>
         <footer>Foter</footer>

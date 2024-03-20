@@ -16,9 +16,10 @@ body{
   height: auto;
 }
 .container aside{
-  background-color: rgb(79, 91, 88);
+  background-color: rgb(90, 131, 121);
   grid-row: 2/4;
-  height: 250px;
+  height: auto;
+  
 }
 .container main{
   background-color: rgb(154, 180, 116);
@@ -108,28 +109,31 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   align-items: center;
   width: auto;
   height: 100%;
+  background-color: rgb(8, 38, 65);
 }
-.one{
-  margin-top: 3px;
-  grid-row: 1;
-  background-color: rgb(142, 129, 129);
-  border-radius: 5px;
-  height: auto;
-  width: 50%;
-  border-radius: 5px;
-  width: auto;
-
+.carrousel-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ajusta la altura del contenedor al 100% del alto de la pantalla */
+  
 }
-.two{
-  background-color: rgb(126, 94, 147);
-  grid-row: 2;
-}
-.three{
-  background-color: brown;
-  grid-row: 3;
-}
-.alca{
+.carrousel-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
   height: 100%;
-  width: 100%;
-  background-color: aliceblue;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5px;
+  border-radius: 10px;
 }
+.imgwork{
+  border-radius: 10px;
+}
+.legend{
+color: red;
+}
+
+
