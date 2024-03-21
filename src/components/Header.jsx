@@ -6,9 +6,20 @@ import { FaReact } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { TbBrandCss3 } from "react-icons/tb";
 import { RiHtml5Line } from "react-icons/ri";
+import '../index.css'
+import { useState } from 'react';
+import Popup from './Popup'; // importamos el componente para poder cliquear
+
 const Header = () => {
+// Estado para controlar la visivilidad del popUp.
+    const [showPopup, setShowPopup] = useState(false);
+
+    const togglePopup=()=>{
+        setShowPopup(!showPopup)
+    }
   return (
     <>
+
     <div className="divheader">
         <button className='btn'>Sobre mi</button>
         <button className='btn'>Proyectos</button>
@@ -21,20 +32,20 @@ const Header = () => {
         </div>
         <div className="mi">
             <div className='txt-ctr'>
-                <h1> CV Gonzalez Gonzalez Salvador.</h1>
+                <h2> CV Gonzalez Gonzalez Salvador.</h2>
                 <p> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo, puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a trabajar bajo presión y en entornos competitivos.</p>
                 <p>Me encanta la tecnologia, desarrollar sofware con JavaScript y react, maquetacion web con HTML y css,</p>
-
                 <h1 className='icons'> 
-                    
                     <FaReact/><TbBrandJavascript/><TbBrandCss3/> 
                     <RiHtml5Line/>
-                    
-                </h1>
-
+                </h1>                
             </div>
+            <button onClick={togglePopup} className='cont'>Datos de Contacto</button>
+            {/* Mostramos el popup si showPopup es true */}
+            {showPopup && <Popup onClose={togglePopup}/>}
         </div>
     </div>
+    
     </>
   )
 }

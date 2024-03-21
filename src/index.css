@@ -49,8 +49,14 @@ border-radius: 5px;
 overflow: hidden;
 }
 .mi{
+  display: grid;
+  place-items: center;
+  border: 1px solid #7a3e9b;
 border-radius: 3px;
 overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
+}
+.mi button{
+  color: cornflowerblue;
 }
 .im img{
   width: 100%;
@@ -154,3 +160,46 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 }
 
 
+
+/* Popup.css */
+
+.popup-overlay {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  position: fixed;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.close-button:hover {
+  color: #f00; /* Cambia el color al pasar el ratón por encima */
+}
