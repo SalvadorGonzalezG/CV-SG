@@ -11,7 +11,7 @@ const Carrou = () => {
         infiniteLoop={true} // Para que el carrusel continúe en un bucle infinito
         showStatus={false} // Para ocultar el indicador de estado
         showThumbs={false} // Para ocultar las miniaturas
-        interval={5000} // Intervalo de tiempo entre diapositivas (en milisegundos)
+        interval={2000} // Intervalo de tiempo entre diapositivas (en milisegundos)
         stopOnHover={true} // Para detener la reproducción automática al pasar el ratón por encima
         transitionTime={500} // Tiempo de transición entre diapositivas
           showIndicators={true} 
