@@ -181,8 +181,8 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
   position: fixed;
-  top: 40%;
-  left: 60%;
+  top: 50%;
+  left: 63%;
   transform: translate(-50%, -50%);
   height: auto;
   width: auto;
@@ -191,15 +191,16 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 
 .close-button {
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
   font-size: 16px;
-  color: #333;
+  color: red !important;
+  
 }
 
 .close-button:hover {
-  color: #f00; /* Cambia el color al pasar el ratón por encima */
+  color: rgb(3, 113, 232); /* Cambia el color al pasar el ratón por encima */
 }
