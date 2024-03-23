@@ -6,6 +6,9 @@ import { FaReact } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { TbBrandCss3 } from "react-icons/tb";
 import { RiHtml5Line } from "react-icons/ri";
+import { SlArrowDown } from "react-icons/sl";
+
+
 import '../index.css'
 import { useState } from 'react';
 import Popup from './Popup'; // importamos el componente para poder cliquear
@@ -40,7 +43,7 @@ const Header = () => {
                     <RiHtml5Line/>
                 </h1>                
             </div>
-            <button onClick={togglePopup} className='cont'>Datos de Contacto</button>
+            <button onClick={togglePopup} className='cont'>Datos de Contacto <br /> <SlArrowDown/> </button>
             {/* Mostramos el popup si showPopup es true */}
             {showPopup && <Popup onClose={togglePopup}/>}
         </div>
