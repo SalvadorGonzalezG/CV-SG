@@ -3,8 +3,7 @@ import { MdPhone, MdOutlinePhoneIphone } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { FcContacts } from "react-icons/fc";
 import { TiHome } from "react-icons/ti";
-import { RiMapPinUserFill, RiPinDistanceFill } from "react-icons/ri";
-
+import { RiMapPinUserFill } from "react-icons/ri";
 
 // importamos los estilos directamente del documento donde se colocaron
 import '../index.css';
@@ -28,5 +27,4 @@ const Popup = ({ onClose }) => {
     </div>
   );
 };
-
 export default Popup;
