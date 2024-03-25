@@ -36,8 +36,8 @@ const Header = () => {
         <div className="mi">
             <div className='txt-ctr'>
                 <h2> CV Gonzalez Gonzalez Salvador.</h2>
-                <p> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo, puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a trabajar bajo presión y en entornos competitivos.</p>
-                <p>Me encanta la tecnologia, desarrollar sofware con JavaScript y react, maquetacion web con HTML y css,</p>
+                <p> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo, puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a trabajar bajo presión y en entornos competitivos.
+                <br /> <br />Me encanta la tecnologia, desarrollar sofware con JavaScript y react, maquetacion web con HTML y css,</p>
                 <h1 className='icons'> 
                     <FaReact/><TbBrandJavascript/><TbBrandCss3/> 
                     <RiHtml5Line/>

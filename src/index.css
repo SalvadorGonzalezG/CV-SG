@@ -9,14 +9,15 @@ body{
   gap:4px;
 }
 .container header{
-  background-color: rgb(86, 126, 49);
+  
   grid-column: 1/-1;
   grid-row: 1;
   border-radius: 10px;
   height: auto;
+  
 }
 .container aside{
-  background-color: rgb(90, 131, 121);
+  
   grid-row: 2/4;
   height: auto;
   
@@ -33,18 +34,18 @@ body{
 .divheader{
   display: flex;
   justify-content: center;
-  gap: 2px;
+  gap: 3px;
 }
 .overHeader{
-  background-color: rgb(99, 197, 197);
+  
   display: grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns: 33.2% auto;
   grid-auto-rows: minmax(50px auto) ;
   min-height: 71%;
   gap:5px;
 }
 .im{
-background-color: rgb(155, 155, 241);
+
 border-radius: 5px;
 overflow: hidden;
 }
@@ -52,7 +53,7 @@ overflow: hidden;
   display: grid;
   place-items: center;
   border: 1px solid #7a3e9b;
-border-radius: 3px;
+border-radius: 10px;
 overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 }
 .mi button{
@@ -62,7 +63,7 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 20%;
+  border-radius: 10%;
   margin-top: 5%;
   opacity: 80%;
 }
@@ -71,6 +72,7 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   color: blueviolet;
   border: none;
   margin-top: 2px;
+  cursor: pointer;
 }
 .txt-ctr{
   border-radius: 5px;
