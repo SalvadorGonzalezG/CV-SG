@@ -37,7 +37,6 @@ body{
   gap: 3px;
 }
 .overHeader{
-  
   display: grid;
   grid-template-columns: 33.2% auto;
   grid-auto-rows: minmax(50px auto) ;
