@@ -17,12 +17,11 @@ body{
   
 }
 .container aside{
-  
   grid-row: 2/4;
   height: auto;
-  
 }
 .container main{
+  border-radius: 5px;
   background-color: rgb(154, 180, 116);
   grid-column: span 2;
   grid-row: 2/4;
