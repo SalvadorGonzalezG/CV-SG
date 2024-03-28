@@ -43,14 +43,13 @@ body{
   gap:5px;
 }
 .im{
-
 border-radius: 5px;
 overflow: hidden;
 }
 .mi{
   display: grid;
   place-items: center;
-  border: 1px solid #7a3e9b;
+  border: 1px solid #ad49e3;
 border-radius: 10px;
 overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 }
@@ -73,6 +72,7 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   cursor: pointer;
 }
 .txt-ctr{
+  width: 100%;
   border-radius: 5px;
   margin-top: 2%;
   display: flex;

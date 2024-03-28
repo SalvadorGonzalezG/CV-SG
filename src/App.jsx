@@ -4,6 +4,7 @@ import Carrousel from "./components/Carrousel1"
 import Carrou from "./components/Carrou" //Segundo Carrousel incluido en el aside
 import Cslhab from "./components/Cslhab"
 import Content from "./components/Content"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -21,7 +22,9 @@ function App() {
         <main>
           <Content/>
         </main>
-        <footer>Foter</footer>
+        <footer>
+          <Footer/>
+        </footer>
       </section>
     </>
   )
