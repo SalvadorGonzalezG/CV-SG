@@ -1,5 +1,4 @@
 import Header from "./components/Header"
-import Aside from "./components/Aside"
 import Carrousel from "./components/Carrousel1"
 import Carrou from "./components/Carrou" //Segundo Carrousel incluido en el aside
 import Cslhab from "./components/Cslhab"
