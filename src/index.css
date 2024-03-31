@@ -22,7 +22,7 @@ body{
 }
 .container main{
   border-radius: 5px;
-  background-color: rgb(154, 180, 116);
+  border: 1px solid #2c6158;
   grid-column: span 2;
   grid-row: 2/4;
 }
@@ -49,7 +49,7 @@ overflow: hidden;
 .mi{
   display: grid;
   place-items: center;
-  border: 1px solid #ad49e3;
+  border: 1px solid #2c6158;
 border-radius: 10px;
 overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 }
@@ -203,4 +203,16 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 
 .close-button:hover {
   color: rgb(3, 113, 232); /* Cambia el color al pasar el ratón por encima */
+}
+.conte{
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: beige;
+  display: grid;
+  height: auto;
+  padding: 2px; /*Añade un espacio al rededor del h1,div, etc*/
 }
