@@ -4,6 +4,7 @@ import Carrou from "./components/Carrou" //Segundo Carrousel incluido en el asid
 import Cslhab from "./components/Cslhab"
 import Content from "./components/Content"
 import Footer from "./components/Footer"
+import CarrouCir from "./components/CarrouCir"
 
 function App() {
 
@@ -14,8 +15,9 @@ function App() {
           <Header />
         </header>
         <aside>
-          <Carrousel />
+          <Carrousel/>
           <Carrou/>
+          <CarrouCir/>
           <Cslhab/>
         </aside>
         <main>

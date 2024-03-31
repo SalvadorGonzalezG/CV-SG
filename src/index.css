@@ -19,6 +19,7 @@ body{
 .container aside{
   grid-row: 2/4;
   height: auto;
+  border: 1px solid #2c6158;
 }
 .container main{
   border-radius: 5px;
@@ -132,14 +133,13 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   height: 100%;
   width: 90%;
   margin-left: 5%;
-  margin-top: 5px;
+  margin-top: 10%;
   border-radius: 10px;
 }
 .carrousel-content1{
   display: flex;
   justify-content: center;
   align-items: center;
-  
   height: 100%;
   width: 90%;
   margin-left: 5%;
@@ -206,13 +206,14 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 }
 .conte{
   width: 100%;
-  border-radius: 5px;
-  margin-top: 2%;
+  border-radius: 10px;
+  margin-top: 43px;
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: beige;
   display: grid;
   height: auto;
-  padding: 2px; /*Añade un espacio al rededor del h1,div, etc*/
+  height: 22%;
+  /*padding: 0; /*Añade un espacio al rededor del h1,div, etc*/ 
 }
