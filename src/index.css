@@ -214,6 +214,6 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   background-color: beige;
   display: grid;
   height: auto;
-  height: 22%;
+  height: 20%;
   /*padding: 0; /*Añade un espacio al rededor del h1,div, etc*/ 
 }

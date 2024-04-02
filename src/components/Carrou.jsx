@@ -18,7 +18,7 @@ const Carrou = () => {
      >
         <div >
           <img className="imgwork" src="https://i.pinimg.com/400x/65/dd/ba/65ddbadb1dd89ec02aec582f0e73e794.jpg" alt="Imagen 1"/>
-          <p className="legend">UAM </p>
+          <p className="legend">UAMI</p>
         </div>
         <div >
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOLtD0gYUO2PXXaqq_Icfcl4CRcNvQKtfoRVVOC9ypsg&s" alt="Imagen 1" className='imgwork'/>
