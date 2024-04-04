@@ -7,6 +7,8 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { TbBrandCss3 } from "react-icons/tb";
 import { RiHtml5Line } from "react-icons/ri";
 import { SlArrowDown } from "react-icons/sl";
+import { FaFacebook } from "react-icons/fa";
+
 
 
 import '../index.css'
@@ -24,10 +26,10 @@ const Header = () => {
     <>
 
     <div className="divheader">
-        <button className='btn'>Sobre mi</button>
         <button className='btn'>Proyectos</button>
         <button className='btn'><FaGithubAlt/></button>
         <button className='btn'><FaLinkedin/></button>
+        <button className='btn'><FaFacebook/></button>
     </div>
     <div className="overHeader">
         <div className="im">

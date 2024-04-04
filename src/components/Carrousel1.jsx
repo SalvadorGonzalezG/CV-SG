@@ -19,8 +19,8 @@ const Carrousel1 = () => {
         interval={5000} // Intervalo de tiempo entre diapositivas (en milisegundos)
         stopOnHover={true} // Para detener la reproducción automática al pasar el ratón por encima
       >
-        <div >
-          <img src="https://www.menuprecios.mx/img/menu/cinepolis-vip-menu-mexico.jpg" alt="Imagen 1" className='imgwork'/>
+        <div>
+          <img className='imgwork' src="https://www.menuprecios.mx/img/menu/cinepolis-vip-menu-mexico.jpg" alt="Imagen 1"/>
           <p className="legend">CINEPOLS <FcBookmark/></p>
         </div>
         <div >
