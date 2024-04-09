@@ -10,15 +10,17 @@ import { SlArrowDown } from "react-icons/sl";
 import { FaFacebook } from "react-icons/fa";
 
 
-
 import '../index.css'
 import { useState } from 'react';
 import Popup from './Popup'; // importamos el componente para poder cliquear
 
-const Header = () => {
+const Header = ({showComponent, setShowComponent}) => {
 // Estado para controlar la visivilidad del popUp.
     const [showPopup, setShowPopup] = useState(false);
 
+    const handleClose=()=>{
+        setShowComponent(false)
+    }
     const togglePopup=()=>{
         setShowPopup(!showPopup)
     }
@@ -30,6 +32,7 @@ const Header = () => {
         <button className='btn'><FaGithubAlt/></button>
         <button className='btn'><FaLinkedin/></button>
         <button className='btn'><FaFacebook/></button>
+        <button onClick={handleClose} > Cerrar cv</button>
     </div>
     <div className="overHeader">
         <div className="im">
@@ -37,7 +40,7 @@ const Header = () => {
         </div>
         <div className="mi">
             <div className='txt-ctr'>
-                <h2> CV Gonzalez Gonzalez Salvador.</h2>
+                <h2> VISTA PROJECT.</h2>
                 <p> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo, puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a trabajar bajo presión y en entornos competitivos.
                 <br /> <br />Me encanta la tecnologia, desarrollar sofware con JavaScript y react, maquetacion web con HTML y css,</p>
                 <h1 className='icons'> 

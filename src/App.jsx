@@ -5,29 +5,46 @@ import Content from "./components/Content"
 import Footer from "./components/Footer"
 import CarrouCir from "./components/CarrouCir"
 import Carrousel1 from "./components/Carrousel1"
+import { useState } from "react"
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import Projects from "./pages/Projects"
 
 function App() {
+ 
+  const[showComponent, setShowComponent] = useState(false);
 
+  const handleClick = () =>{
+    setShowComponent(!showComponent);
+  }
+  
   return (
     <>
+    <div className="mostrarcv">
+       {/* Aparece el boton al dar click aparace toda la section  y el boton desaparece.*/}
+      {showComponent ? null: ( <button className="btn" onClick={handleClick}>Mostrar CV</button>)}
+
+       {/* Muestra el contenido cuando showComponent es verdadero */} 
+      {showComponent && (
       <section className="container">
-        <header>
-          <Header />
-        </header>
-        <aside>
-          <Carrousel1/>
-          <Carrou/>
-          <CarrouCir/>
-          <Cslhab/>
-        </aside>
-        <main>
-          <Content/>
-        </main>
-        <footer>
-          <Footer/>
-        </footer>
-      </section>
-      
+      <header>
+        {/* pasando el prop de forma correcta para que al dar click en el boton el componente se renderice y este xse cierre */}
+        <Header showComponent={showComponent} setShowComponent={setShowComponent} />
+      </header>
+      <aside>
+        <Carrousel1/>
+        <Carrou/>
+        <CarrouCir/>
+        <Cslhab/>
+      </aside>
+      <main>
+        <Content/>
+      </main>
+      <footer>
+        <Footer/>
+      </footer>
+    </section>   
+       )}
+    </div>
     </>
   )
 }

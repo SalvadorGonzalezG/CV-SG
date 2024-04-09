@@ -118,6 +118,12 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 .otro{
   color: #53a396;
 }
+.mostrarcv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .carrousel-container {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
