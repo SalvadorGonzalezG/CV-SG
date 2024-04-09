@@ -32,13 +32,14 @@ const Header = ({showComponent, setShowComponent}) => {
         <button className='btn'><FaGithubAlt/></button>
         <button className='btn'><FaLinkedin/></button>
         <button className='btn'><FaFacebook/></button>
-        <button onClick={handleClose} > Cerrar cv</button>
+        
     </div>
     <div className="overHeader">
         <div className="im">
             <img src={im} alt="yo" className='yo' />
         </div>
         <div className="mi">
+        <button className='top-left-button' onClick={handleClose} >X</button>
             <div className='txt-ctr'>
                 <h2> VISTA PROJECT.</h2>
                 <p> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo, puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a trabajar bajo presión y en entornos competitivos.

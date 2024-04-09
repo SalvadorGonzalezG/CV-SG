@@ -122,7 +122,17 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   display: flex;
   justify-content: center;
   align-items: center;
-  
+}
+.top-left-button{
+  position: absolute;
+  top: 0;
+  left: 95%;
+  margin: 1.6%;
+  background-color: red;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: white !important;
 }
 .carrousel-container {
   display: flex;

@@ -21,7 +21,7 @@ function App() {
     <>
     <div className="mostrarcv">
        {/* Aparece el boton al dar click aparace toda la section  y el boton desaparece.*/}
-      {showComponent ? null: ( <button className="btn" onClick={handleClick}>Mostrar CV</button>)}
+      {showComponent ? null: ( <button className="btn" onClick={handleClick}>CV Salvador Gonzalez G.</button>)}
 
        {/* Muestra el contenido cuando showComponent es verdadero */} 
       {showComponent && (
