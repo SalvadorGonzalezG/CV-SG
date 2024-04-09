@@ -1,5 +1,5 @@
-import im from '../assets/IMG_0961.jpg'
 
+import im from '../assets/IMG_0961.jpg'
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";

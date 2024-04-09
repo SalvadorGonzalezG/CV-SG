@@ -115,6 +115,9 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   height: 100%;
   background-color: rgb(8, 38, 65);
 }
+.otro{
+  color: #53a396;
+}
 .carrousel-container {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
@@ -126,11 +129,10 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   display: flex;
   justify-content: center;
   align-items: center;
- 
   height: 100%;
   width: 90%;
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 6%;
   border-radius: 10px;
 }
 .carrousel-content1{
