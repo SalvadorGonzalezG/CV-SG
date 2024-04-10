@@ -1,4 +1,4 @@
-
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import im from '../assets/IMG_0961.jpg'
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -14,10 +14,11 @@ import '../index.css'
 import { useState } from 'react';
 import Popup from './Popup'; // importamos el componente para poder cliquear
 
-const Header = ({showComponent, setShowComponent}) => {
+const Header = ({ showComponent, setShowComponent}) => {
 // Estado para controlar la visivilidad del popUp.
     const [showPopup, setShowPopup] = useState(false);
 
+    
     const handleClose=()=>{
         setShowComponent(false)
     }
@@ -39,7 +40,8 @@ const Header = ({showComponent, setShowComponent}) => {
             <img src={im} alt="yo" className='yo' />
         </div>
         <div className="mi">
-        <button className='top-left-button' onClick={handleClose} >X</button>
+
+        <Router><Link to='/'><button className='top-left-button' onClick={handleClose} >X</button></Link></Router>
             <div className='txt-ctr'>
                 <h2> VISTA PROJECT.</h2>
                 <p> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo, puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a trabajar bajo presión y en entornos competitivos.

@@ -45,24 +45,23 @@ body{
 .im{
 border-radius: 5px;
 overflow: hidden;
+width: 100%;
 }
 .mi{
   display: grid;
   place-items: center;
   border: 1px solid #69f0da;
-border-radius: 10px;
+border-radius: 5px;
 overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 }
-.mi button{
-  color: cornflowerblue;
-}
+
 .im img{
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10%;
-  margin-top: 5%;
-  opacity: 80%;
+  border-radius: 7px;
+  margin-top: 0;
+  opacity: 70%;
 }
 .btn{
   border-radius: 5px;
@@ -122,6 +121,7 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .top-left-button{
   position: absolute;

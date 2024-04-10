@@ -1,8 +1,8 @@
 
+const Projects = ({}) => {
 
-const Projects = () => {
   return (
-    <h1 className="otro">projects</h1>
+    <h1 className="otro">Proyectos.</h1>
   )
 }
 
