@@ -104,7 +104,6 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 }
 .carrousel {
   margin-top: 2px;
-  
   grid-auto-rows: minmax(100px, auto);
   display: flex;
   flex-direction:column;
@@ -114,8 +113,28 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   height: 100%;
   background-color: rgb(8, 38, 65);
 }
-.otro{
-  color: #53a396;
+.projects-container {
+  display: grid;
+  place-items: center;
+}
+
+.otro {
+  color: #ddf5f1;
+  text-align: center;
+}
+
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  color: rgb(187, 58, 58);
+  background-color: white;
+  text-align: center;
+  border: 1px solid #53a396;
+}
+
+.proyectos div {
+  margin: 0 auto;
 }
 .mostrarcv{
   display: flex;
@@ -229,13 +248,7 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   height: 20%;
   /*padding: 0; /*Añade un espacio al rededor del h1,div, etc*/ 
 }
-.proyectos{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px;
-  color: white;
-  background-color: withe;
-}
+
 /*@media screen and (max-width: 850) {
  body{
   container: grid;
