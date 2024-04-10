@@ -8,26 +8,29 @@ import Carrousel1 from "./components/Carrousel1"
 import { useState } from "react"
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Projects from "./pages/Projects"
+  // Icons
+import { FcOpenedFolder } from "react-icons/fc";
+import { FcOrgUnit } from "react-icons/fc";
 
 function App() {
  
   const[showComponent, setShowComponent] = useState(false);
-
   const[project, setProject] = useState(false);
+  
 
   const projectClick = () => {
     setProject(!project)
+
   }
   const handleClick = () =>{
     setShowComponent(!showComponent);
   }
-  
   return (
     <>
     
     <div className="mostrarcv">
-       {/* Aparece el boton al dar click aparace toda la section  y el boton desaparece.*/}
-      {showComponent ? null: ( <Router><Link to='/cv'><button className="btn" onClick={handleClick}>CV Salvador Gonzalez G.</button></Link></Router>)}
+       {/* Aparece el boton, al dar click aparace toda la section  y el boton desaparece.*/}
+      {showComponent ? null: ( <Router><Link to='/cv'><button className="btn" onClick={handleClick}><FcOpenedFolder/>CV Salvador Gonzalez G.</button></Link></Router>)}
       
        {/* Muestra el contenido cuando showComponent es verdadero */} 
       {showComponent && (
@@ -53,8 +56,9 @@ function App() {
     </div>
     <div>
     </div>
+    {/* Mostrar el boton de proyectos. */}
     <div className="mostrarcv">
-    <button className="btn" onClick={projectClick}>proyectos</button>
+      {project ? null: (<button className="btn" onClick={projectClick}><FcOrgUnit/>Proyectos.</button>) }
         {/*Mostrar Projects solo si project es true */}
         {project && (<Projects/>)}
     </div>

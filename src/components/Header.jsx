@@ -17,6 +17,7 @@ import Projects from '../pages/Projects';
 const Header = ({project, setProject, showComponent, setShowComponent}) => {
 // Estado para controlar la visivilidad del popUp.
     const [showPopup, setShowPopup] = useState(false);
+    
 
     const handleOpen=()=>{
         setProject(!project)
