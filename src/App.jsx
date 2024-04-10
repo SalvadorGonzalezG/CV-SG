@@ -12,6 +12,7 @@ import Projects from "./pages/Projects"
 function App() {
  
   const[showComponent, setShowComponent] = useState(false);
+
   const[project, setProject] = useState(false);
 
   const projectClick = () => {
@@ -52,20 +53,11 @@ function App() {
     </div>
     <div>
     </div>
-        {project ? null : 
-        (project && 
-        <Projects/>)}
-
-        {project ? null : (<Router><Link to='/project'> <button onClick={projectClick}>proyectos</button> </Link> </Router>
-        
-        ) }
-      {project && (
-        
-          
-          <Projects/>
-          
-        
-      )}
+    <div className="mostrarcv">
+    <button className="btn" onClick={projectClick}>proyectos</button>
+        {/*Mostrar Projects solo si project es true */}
+        {project && (<Projects/>)}
+    </div>
     </>
   )
 }

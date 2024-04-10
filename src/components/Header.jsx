@@ -9,16 +9,19 @@ import { RiHtml5Line } from "react-icons/ri";
 import { SlArrowDown } from "react-icons/sl";
 import { FaFacebook } from "react-icons/fa";
 
-
 import '../index.css'
 import { useState } from 'react';
 import Popup from './Popup'; // importamos el componente para poder cliquear
+import Projects from '../pages/Projects';
 
-const Header = ({ showComponent, setShowComponent}) => {
+const Header = ({project, setProject, showComponent, setShowComponent}) => {
 // Estado para controlar la visivilidad del popUp.
     const [showPopup, setShowPopup] = useState(false);
 
-    
+    const handleOpen=()=>{
+        setProject(!project)
+        setShowComponent(false) //oculta el componente cv al dar click en proyectos
+    }
     const handleClose=()=>{
         setShowComponent(false)
     }
@@ -29,12 +32,13 @@ const Header = ({ showComponent, setShowComponent}) => {
     <>
 
     <div className="divheader">
-        <button className='btn'>Proyectos</button>
+        
+        {project ? null : (<Router><Link to='/project'><button onClick={handleOpen} className='btn'>Proyectos</button></Link></Router>)}
         <button className='btn'><FaGithubAlt/></button>
         <button className='btn'><FaLinkedin/></button>
         <button className='btn'><FaFacebook/></button>
-        
     </div>
+    {showComponent ? false: project && (<Projects/>)}
     <div className="overHeader">
         <div className="im">
             <img src={im} alt="yo" className='yo' />
