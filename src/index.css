@@ -126,14 +126,18 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 .proyectos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
+  gap: 3em;
   color: rgb(187, 58, 58);
-  background-color: white;
+  background-color: rgb(78, 79, 79);
   text-align: center;
   border: 1px solid #53a396;
 }
-
+.imagen{
+  height: 91%;
+  width: 80%;
+}
 .proyectos div {
+  background-color: aliceblue;
   margin: 0 auto;
 }
 .mostrarcv{

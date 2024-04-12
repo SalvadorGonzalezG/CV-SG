@@ -26,7 +26,7 @@ const Projects = () => {
       <div className="proyectos">
         {projects.map((project)=>(
           <div key={project.id}>
-            <img src={project.screenshot_url} alt={project.name} />
+            <img className="imagen" src={project.screenshot_url} alt={project.name} />
             
             <button className="btn">
               <a href={project.url} target="_black" rel="noopener noreferrer">Ver proyecto</a> 
