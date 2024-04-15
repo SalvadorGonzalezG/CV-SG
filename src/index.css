@@ -116,6 +116,8 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 .projects-container {
   display: grid;
   place-items: center;
+  position: relative;
+  margin: 0 auto;
 }
 
 .otro {
@@ -127,11 +129,11 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3em;
-  color: rgb(187, 58, 58);
-  background-color: rgb(212, 242, 242);
+  background-color: rgb(3, 101, 101);
   text-align: center;
   border: 1px solid #f9f9f9;
   border-radius: 5px;
+
 }
 .imagen{
   border-radius: 10px;
@@ -140,16 +142,14 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   width: 80%;
 }
 .proyectos div {
-
   background-color: rgb(165, 67, 174);
-  margin: 0 auto;
+  margin: 10px 15px;
   border-radius: 10px;
 }
 .mostrarcv{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .top-left-button{
   position: absolute;
@@ -161,6 +161,18 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   border-radius: 2px;
   cursor: pointer;
   color: white !important;
+}
+.close-btn{
+  background-color: rgb(248, 80, 94);
+  color: white;
+  position:absolute;
+  left: 97%;
+  top: 10.5%;
+  border-radius: 5px;
+  border: none;
+}
+.etiqueta{
+  text-decoration: none;
 }
 .carrousel-container {
   display: flex;

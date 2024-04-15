@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import im from '../assets/IMG_0961.jpg'
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -14,56 +14,56 @@ import { useState } from 'react';
 import Popup from './Popup'; // importamos el componente para poder cliquear
 import Projects from '../pages/Projects';
 
-const Header = ({project, setProject, showComponent, setShowComponent}) => {
-// Estado para controlar la visivilidad del popUp.
+const Header = ({ project, setProject, showComponent, setShowComponent }) => {
+    // Estado para controlar la visivilidad del popUp.
     const [showPopup, setShowPopup] = useState(false);
-    
 
-    const handleOpen=()=>{
+
+    const handleOpen = () => {
         setProject(!project)
         setShowComponent(false) //oculta el componente cv al dar click en proyectos
     }
-    const handleClose=()=>{
+    const handleClose = () => {
         setShowComponent(false)
     }
-    const togglePopup=()=>{
+    const togglePopup = () => {
         setShowPopup(!showPopup)
     }
-  return (
-    <>
+    return (
+        <>
 
-    <div className="divheader">
-        
-        {project ? null : (<Router><Link to='/project'><button onClick={handleOpen} className='btn'>Proyectos</button></Link></Router>)}
-        <button className='btn'><FaGithubAlt/></button>
-        <button className='btn'><FaLinkedin/></button>
-        <button className='btn'><FaFacebook/></button>
-    </div>
-    {showComponent ? false: project && (<Projects/>)}
-    <div className="overHeader">
-        <div className="im">
-            <img src={im} alt="yo" className='yo' />
-        </div>
-        <div className="mi">
+            <div className="divheader">
 
-        <Router><Link to='/'><button className='top-left-button' onClick={handleClose} >X</button></Link></Router>
-            <div className='txt-ctr'>
-                <h2> VISTA PROJECT.</h2>
-                <p> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo, puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a trabajar bajo presión y en entornos competitivos.
-                <br /> <br />Me encanta la tecnologia, desarrollar sofware con JavaScript y react, maquetacion web con HTML y css,</p>
-                <h1 className='icons'> 
-                    <FaReact/><TbBrandJavascript/><TbBrandCss3/> 
-                    <RiHtml5Line/>
-                </h1>                
+                {project ? null : (<Router><Link to='/project'><button onClick={handleOpen} className='btn'>Proyectos</button></Link></Router>)}
+                <button className='btn'><FaGithubAlt /></button>
+                <button className='btn'><FaLinkedin /></button>
+                <button className='btn'><FaFacebook /></button>
             </div>
-            <button onClick={togglePopup} className='cont'>Datos de Contacto <br /> <SlArrowDown/> </button>
-            {/* Mostramos el popup si showPopup es true */}
-            {showPopup && <Popup onClose={togglePopup}/>}
-        </div>
-    </div>
-    
-    </>
-  )
+            {showComponent ? false : project && (<Projects />)}
+            <div className="overHeader">
+                <div className="im">
+                    <img src={im} alt="yo" className='yo' />
+                </div>
+                <div className="mi">
+
+                    <Router><Link to='/'><button className='top-left-button' onClick={handleClose} >X</button></Link></Router>
+                    <div className='txt-ctr'>
+                        <h2> VISTA PROJECT.</h2>
+                        <p> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo, puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a trabajar bajo presión y en entornos competitivos.
+                            <br /> <br />Me encanta la tecnologia, desarrollar sofware con JavaScript y react, maquetacion web con HTML y css,</p>
+                        <h1 className='icons'>
+                            <FaReact /><TbBrandJavascript /><TbBrandCss3 />
+                            <RiHtml5Line />
+                        </h1>
+                    </div>
+                    <button onClick={togglePopup} className='cont'>Datos de Contacto <br /> <SlArrowDown /> </button>
+                    {/* Mostramos el popup si showPopup es true */}
+                    {showPopup && <Popup onClose={togglePopup} />}
+                </div>
+            </div>
+
+        </>
+    )
 }
 
 export default Header
