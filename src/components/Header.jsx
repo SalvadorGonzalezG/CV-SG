@@ -45,7 +45,7 @@ const Header = ({ project, setProject, showComponent, setShowComponent }) => {
                     <img src={im} alt="yo" className='yo' />
                 </div>
                 <div className="mi">
-
+                    {/**  Boton que cierra mi CV. */}
                     <Router><Link to='/'><button className='top-left-button' onClick={handleClose} >X</button></Link></Router>
                     <div className='txt-ctr'>
                         <h2> VISTA PROJECT.</h2>

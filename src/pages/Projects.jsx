@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from 'axios'
 
-const Projects = () => {
+const Projects = ({onClose}) => {
   // Inicializamos el estado de los proyectos con un array vacion.
   const [projects, setProjects] = useState([])
 
@@ -21,9 +21,10 @@ const Projects = () => {
       })
       .catch((error) => { console.error("Error al obtener la lista de proyectos", error) })
   }, [])
+
   return (
     <div className="projects-container">
-      <button className="close-btn">X</button>
+      <button className="close-btn" onClick={onClose}>X</button>
       <h1 className="otro">Proyectos.</h1>
       <div className="proyectos">
         {projects.map((project) => (

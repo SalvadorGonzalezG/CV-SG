@@ -25,6 +25,9 @@ function App() {
   const handleClick = () =>{
     setShowComponent(!showComponent);
   }
+  const handleCloseProjects=()=>{
+    setProject(false)
+  }
   return (
     <>
     
@@ -60,7 +63,7 @@ function App() {
     <div className="mostrarcv">
       {project ? null: (<button className="btn" onClick={projectClick}><FcOrgUnit/>Proyectos.</button>) }
         {/*Mostrar Projects solo si project es true */}
-        {project && (<Projects/>)}
+        {project && <Projects onClose={handleCloseProjects}/>}
     </div>
     </>
   )
