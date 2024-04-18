@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from 'axios'
+import { GrDeploy } from "react-icons/gr";
 
 const Projects = ({onClose}) => {
   // Inicializamos el estado de los proyectos con un array vacion.
@@ -26,6 +27,9 @@ const Projects = ({onClose}) => {
     <div className="projects-container">
       <button className="close-btn" onClick={onClose}>X</button>
       <h1 className="otro">Proyectos.</h1>
+      <div className="div-proyect">
+        <p className="parrafo-proyect">Estos proyectos han sido cargados y estan disponibles debido a la app de netlify donde se realizo del deploy de las mismas <GrDeploy/>.</p>
+      </div>
       <div className="proyectos">
         {projects.map((project) => (
           <div key={project.id}>

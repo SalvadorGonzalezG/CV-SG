@@ -150,6 +150,7 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 .top-left-button{
   position: absolute;
@@ -173,6 +174,13 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 }
 .etiqueta{
   text-decoration: none;
+}
+.parrafo-proyect{
+  color: white;
+}
+.div-proyect{
+  border-radius: 5px;
+  border: 1px solid #b90606;
 }
 .carrousel-container {
   display: flex;
