@@ -178,6 +178,19 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 .parrafo-proyect{
   color: white;
 }
+.txt-cont{
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: beige;
+  display: grid;
+  height: auto;
+  padding: auto;
+
+}
 .div-proyect{
   border-radius: 5px;
   border: 1px solid #b90606;

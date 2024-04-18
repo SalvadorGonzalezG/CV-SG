@@ -28,7 +28,7 @@ const Projects = ({onClose}) => {
       <button className="close-btn" onClick={onClose}>X</button>
       <h1 className="otro">Proyectos.</h1>
       <div className="div-proyect">
-        <p className="parrafo-proyect">Estos proyectos han sido cargados y estan disponibles debido a la app de netlify donde se realizo del deploy de las mismas <GrDeploy/>.</p>
+        <p className="parrafo-proyect">Proyectos cargados y estan disponibles desde a la appi de netlify donde se realizo el deploy de cada uno de los proyectos. <GrDeploy/>.</p>
       </div>
       <div className="proyectos">
         {projects.map((project) => (

@@ -56,7 +56,7 @@ const Header = ({ project, setProject, showComponent, setShowComponent }) => {
                             <RiHtml5Line />
                         </h1>
                     </div>
-                    <button onClick={togglePopup} className='cont'>Datos de Contacto <br /> <SlArrowDown /> </button>
+                    <button onClick={togglePopup} className='btn'>Datos de Contacto <br /> <SlArrowDown /> </button>
                     {/* Mostramos el popup si showPopup es true */}
                     {showPopup && <Popup onClose={togglePopup} />}
                 </div>
