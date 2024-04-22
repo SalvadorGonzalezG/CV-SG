@@ -181,7 +181,7 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 .txt-cont{
   width: 100%;
   border-radius: 5px;
-  margin-top: 2%;
+  margin-top: 3%;
   display: flex;
   justify-content: center;
   text-align: center;
