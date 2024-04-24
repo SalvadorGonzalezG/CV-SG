@@ -35,6 +35,11 @@ const Carrousel1 = () => {
           <img className='imgwork' src="https://www.cronista.com/files/image/671/671483/64f241ab4c4c0.jpg" alt="Imagen 4" />
           <p className="legend">Cinepolis MÉXICO. <FcFlashOn/></p>
         </div>
+        <div>
+          <img className='imgwork' src="https://cdn.celluloidjunkie.com/wp-content/uploads/2018/04/19172342/CinepolisOrlando-0010.jpg" alt="Imagen 5" />
+          <p className="legend">Cinepolis MÉXICO. <FcFlashOn/></p>
+        </div>
+        
         
       </Carousel>
       </div>
