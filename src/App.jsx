@@ -19,14 +19,17 @@ function App() {
   
 
   const projectClick = () => {
-    setProject(!project)
+    setProject(!project) // cambia el estado del proyecto
+    setShowComponent(false) // oculta el componente relacionado con el CV
 
   }
   const handleClick = () =>{
-    setShowComponent(!showComponent);
+    setShowComponent(!showComponent); // cambia el estado del proyecto.
+    setProject(false) // oculta el componente de proyectos
   }
+  // funcion para cerrar la sección de proyectos.
   const handleCloseProjects=()=>{
-    setProject(false)
+    setProject(false) 
   }
   return (
     <>
