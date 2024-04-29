@@ -97,9 +97,10 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
 .img{
   display: block;
   margin: auto;
-  width: 100%;
-  height: 20%;
+  width: 75%;
+  height: 75%;
   border-radius: 10px;
+  margin-top: 15px;
   
 }
 .carrousel {
@@ -260,7 +261,7 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   top: 50%;
   left: 63%;
   transform: translate(-50%, -50%);
-  height: 80%;
+  height: 90%;
   width:50%;
   text-align: center;
   overflow: auto;
