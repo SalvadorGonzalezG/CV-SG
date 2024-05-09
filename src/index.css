@@ -102,6 +102,14 @@ overflow: hidden; /*oculta cualquier parte de una imagen que salga del div*/
   border-radius: 10px;
   margin-top: 15px;
 }
+.imgpopup{
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 50%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
 .icon{
   color: #b90606;
 }

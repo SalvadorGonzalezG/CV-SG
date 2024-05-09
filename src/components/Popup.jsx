@@ -14,7 +14,7 @@ const Popup = ({ onClose }) => {
     <div className="popup-overlay" onClick={onClose}>
       <div className="popup-content" onClick={(e) => e.stopPropagation()}>
         <Router><Link to='/cv'><button className="close-button" onClick={onClose}>X</button></Link></Router>
-        <img className='img' src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg" alt="Yo" />
+        <img className='imgpopup' src="https://t3.ftcdn.net/jpg/04/86/43/96/360_F_486439611_vHiEB3E3HZ5Z88kTgWYdx07vRd8aS5wI.jpg" alt="Yo" />
     
         <h2><FcContacts/> Datos de contacto.</h2>
         <h4><RiMapPinUserFill/> Direccion:</h4>
