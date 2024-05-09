@@ -4,6 +4,7 @@ import { IoIosMail } from "react-icons/io";
 import { FcContacts } from "react-icons/fc";
 import { TiHome } from "react-icons/ti";
 import { RiMapPinUserFill } from "react-icons/ri";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 // importamos los estilos directamente del documento donde se colocaron
 import '../index.css';
@@ -12,7 +13,7 @@ const Popup = ({ onClose }) => {
   return (
     <div className="popup-overlay" onClick={onClose}>
       <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-        <button className="close-button" onClick={onClose}>X</button>
+        <Router><Link to='/cv'><button className="close-button" onClick={onClose}>X</button></Link></Router>
         <img className='img' src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg" alt="Yo" />
     
         <h2><FcContacts/> Datos de contacto.</h2>

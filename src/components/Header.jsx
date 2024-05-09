@@ -64,7 +64,7 @@ de mi experiencia laboral y estudios.
                             <RiHtml5Line />
                         </h1>
                     </div>
-                    <button onClick={togglePopup} className='btn'>Datos de Contacto <br /> <SlArrowDown /> </button>
+                   <Router><Link to='/contact'> <button onClick={togglePopup} className='btn'>Datos de Contacto <br /> <SlArrowDown /> </button></Link></Router>
                     {/* Mostramos el popup si showPopup es true */}
                     {showPopup && <Popup onClose={togglePopup} />}
                 </div>
