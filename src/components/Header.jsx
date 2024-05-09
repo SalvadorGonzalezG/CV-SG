@@ -48,9 +48,16 @@ const Header = ({ project, setProject, showComponent, setShowComponent }) => {
                     {/**  Boton que cierra mi CV. */}
                     <Router><Link to='/'><button className='top-left-button' onClick={handleClose} >X</button></Link></Router>
                     <div className='txt-ctr'>
-                        <h2> VISTA PROJECT.</h2>
-                        <p> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo, puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a trabajar bajo presión y en entornos competitivos.
-                            <br /> <br />Me encanta la tecnologia, desarrollar sofware con JavaScript y react, maquetacion web con HTML y css,</p>
+                        <h2> GONZÁLEZ GONZÁLEZ SALVADOR.</h2>
+                        <p> <strong>PERSONALIDAD:</strong> Soy una persona muy respetuosa, responsable, amable, dedicada y comprometida en mi trabajo,<br/> puedo trabajar solo o en equipo, tengo una gran capacidad de liderazgo, estoy habituado a <br /> trabajar bajo presión y en entornos competitivos.
+                        <br /> <strong>OBJETIVO: </strong> Me interesa encontrar un trabajo estable que me permita obtener ingresos
+para mis necesidades diarias <br />a través de mis buenos hábitos y habilidades,
+ofrecer toda mi experiencia y <br /> optimización desarrolladas en el transcurso 
+de mi experiencia laboral y estudios.
+
+                            <br /> <br />Me encanta la tecnologia, desarrollar sofware con JavaScript y react, maquetacion web con HTML y css,
+                            
+                            </p>
                         <h1 className='icons'>
                             <FaReact /><TbBrandJavascript /><TbBrandCss3 />
                             <RiHtml5Line />
