@@ -64,7 +64,7 @@ function App() {
     </div>
     {/* Mostrar el boton de proyectos. */}
     <div className="mostrarcv">
-      {project ? null: (<button className="btn" onClick={projectClick}><FcOrgUnit/>Proyectos.</button>) }
+      {project ? null: (<Router><Link to='/projects'><button className="btn" onClick={projectClick}><FcOrgUnit/>Proyectos.</button></Link></Router>) }
         {/*Mostrar Projects solo si project es true */}
         {project && <Projects onClose={handleCloseProjects}/>}
     </div>

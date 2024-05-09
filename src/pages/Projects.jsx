@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from 'axios'
 import { GrDeploy } from "react-icons/gr";
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 const Projects = ({onClose}) => {
   // Inicializamos el estado de los proyectos con un array vacion.
   const [projects, setProjects] = useState([])
@@ -24,8 +24,9 @@ const Projects = ({onClose}) => {
   }, [])
 
   return (
+  
     <div className="projects-container">
-      <button className="close-btn" onClick={onClose}>X</button>
+      <Router><Link to='/'><button className="close-btn" onClick={onClose}>X</button></Link></Router>
       <h1 className="otro">Proyectos.</h1>
       <div className="div-proyect">
         <p className="parrafo-proyect">Proyectos cargados y estan disponibles desde a la appi de netlify donde se realizo el deploy de cada uno de los proyectos. <GrDeploy/>.</p>
@@ -44,5 +45,6 @@ const Projects = ({onClose}) => {
     </div>
   );
 };
+
 
 export default Projects;

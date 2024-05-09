@@ -55,7 +55,7 @@ para mis necesidades diarias <br />a través de mis buenos hábitos y habilidade
 ofrecer toda mi experiencia y <br /> optimización desarrolladas en el transcurso 
 de mi experiencia laboral y estudios.
 
-                            <br /> <br />Me encanta la tecnologia, desarrollar sofware con JavaScript y React, maquetacion web con HTML y CSS. <br />
+                            <br /> <br />Me fascina la tecnologia, desarrollar sofware con JavaScript y React, maquetacion web con HTML y CSS. <br />
                             para el lado del BackEnd, me gusta trabajar con NodeJs, Express y Mongo realizando proyectos integrales con el MERN Stack.
                             
                             </p>
