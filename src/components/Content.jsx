@@ -48,10 +48,13 @@ const Content = () => {
         <h3>Desarrollo de Software.</h3>
         <h4>HERRAMIENTAS:</h4>
         <ul>
+          <hr />
           <li> HTML, Css, JavaScript, React.</li>
+          
           <li> Vite, Redux, Styled-Components, TailWind, Sass, BootStrap.</li>
           <li> NodeJs, Express, Mongoose, MongoDB, MySQL.</li>
           <li>Conocimiento y uso de software MAC, WINDOWS y LINUX.</li>
+        <hr />
         </ul>
         
       </div>

@@ -1,13 +1,10 @@
 
+import { SiGnuprivacyguard } from "react-icons/si";
+
 const Footer = () => {
   return (
     <>
-    <p>&copy; 2023 My Website</p>
-  <ul>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms of Service</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </ul>
+    <p className="foote">&copy; SALVADOR GONZÁLEZ GONZÁLEZ. 2024 My CV Website. <a href="#">Privacy Policy</a> <SiGnuprivacyguard/></p>
   </>
   )
 }
